@@ -1,0 +1,27 @@
+button{
+                padding:7px;
+                margin-left:10px;
+                border: none;
+                background-color: coral;
+                font-weight: 500;
+                font-size: 14px;
+                font: weight 100;
+                display:inline-flex;
+                transition: transform 450ms;
+            }
+            main{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                place-items:center;
+            }            
+            .image{
+                display: flex;
+                width: 350px;
+                height: 350px;
+            }
+            button:hover{
+                transform: scale(1.08);
+                color:coral;
+                background-color: black;  
+            }
