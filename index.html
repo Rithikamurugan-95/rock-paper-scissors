@@ -15,22 +15,20 @@
         <div style="padding-top: 15px;" class="button-container">
         <button onclick="pickComputerChoice();
         updateScore();
-        playGame('Rock');
-       ">Rock</button>
+        playGame('Rock');">Rock</button>
 
         <button onclick="pickComputerChoice();
                 updateScore();
-                playGame('Paper');
-            "> Paper</button>
+                playGame('Paper');"> Paper</button>
 
         <button onclick="pickComputerChoice();
                          updateScore();
-                         playGame('Scissor');
-           ">Scissors</button>
+                         playGame('Scissor');">Scissors</button>
         </div>
+        <p id="player-choice">Player Choice: </p>
+        <p id="computer-choice">Computer Choice: </p>
         <p class="js-move"></p>
         <p class="js-score"></p>
-        
         <button onclick="location.reload()">
             reset score
         </button>

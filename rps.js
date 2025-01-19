@@ -7,10 +7,19 @@ let computerMove='';
                             };
                             document.querySelector('.js-score').innerHTML=`player score : ${scoreBoard.pScoreBoard} || computer score : ${scoreBoard.cScoreBoard} || Tie : ${scoreBoard.tieScore}`
 
-            function updateScore(){       
+            function updateScore(){    
                 document.querySelector('.js-score').innerHTML=`player score : ${scoreBoard.pScoreBoard} || computer score : ${scoreBoard.cScoreBoard} || Tie : ${scoreBoard.tieScore}`
+                if(scoreBoard.pScoreBoard==10){
+                    alert("player win")
+                    outcome=confirm("player wins")
+                    location.reload();
                 }
-
+                if(scoreBoard.cScoreBoard==10){
+                    alert("player win")
+                    outcome=confirm("player wins")
+                    location.reload();
+                }
+                }
             function pickComputerChoice(){
                 const randomNumber=Math.random();
                 
@@ -24,9 +33,13 @@ let computerMove='';
                     computerMove='Scissor';
                     }
                     console.log(computerMove)
-            }
+            // Update the computer choice display
+            document.getElementById('computer-choice').innerText = `Computer Choice: ${computerMove}`;
+        }
 
             function playGame(playerMove){
+                // Update the player choice display
+            document.getElementById('player-choice').innerText = `Player Choice: ${playerMove}`;
                     if(playerMove==='Rock'){            
                         if(computerMove==='Rock'){
                         result='Tie'
