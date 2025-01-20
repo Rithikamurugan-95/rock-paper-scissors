@@ -36,3 +36,35 @@ button:hover{
 .button1{
 background-color: blueviolet;
 }
+@media (max-width: 768px) {
+    button {
+        font-size: 12px; /* Smaller font size for mobile */
+        padding: 5px; /* Adjust padding for mobile */
+    }
+
+    .image {
+        width: 250px; /* Smaller image size for mobile */
+        height: 250px; /* Smaller image size for mobile */
+    }
+
+    #computer-choice, #player-choice {
+        font-size: 16px; /* Adjust font size for better readability on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 10px; /* Even smaller font size for very small screens */
+        padding: 4px; /* Further adjust padding for very small screens */
+        margin-left: 5px; /* Reduce margin for very small screens */
+    }
+
+    .image {
+        width: 200px; /* Further reduce image size for very small screens */
+        height: 200px; /* Further reduce image size for very small screens */
+    }
+
+    #computer-choice, #player-choice {
+        font-size: 14px; /* Further adjust font size for very small screens */
+    }
+}

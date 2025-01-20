@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ROCK PAPER SCISSOR</title>
+        <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 20px;
+}
+
+img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.start-para {
+    color: #ffffff;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+button {
+    background-color: coral;
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(208, 141, 8, 0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(186, 110, 18, 0.715);
+}
+
+.start-button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .start-para {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    button {
+        margin: 15px 0;
+    }
+
+    .start-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230802174130/Rock-Paper-Scissor.webp">
+        <p class="start-para">Welcome to the Rock Paper Scissors game! This classic hand game, often played between two people, is a fun way to challenge your friends or test your skills against a computer opponent. The rules are simple: Rock crushes Scissors, Scissors cuts Paper, and Paper covers Rock.</p>
+        <button ><a href="index.html" class="start-button">Start</a></button>
+    </body>
+</html>
